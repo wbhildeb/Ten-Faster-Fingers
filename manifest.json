@@ -3,10 +3,32 @@
     "version": "1.0",
     "description": "Instead of learning to type on a site like 10fastfingers.com, cheat!",
     "manifest_version": 2,
+    
     "background": {
         "scripts": [
             "js/background.js"
         ],
         "persistent": false
+    },
+
+    "page_action": {
+        "default_popup": "popup.html",
+        "default_icon": {
+            "16": "images/point16.png",
+            "32": "images/point32.png",
+            "64": "images/point64.png",
+            "128": "images/point128.png",
+            "256": "images/point256.png",
+            "512": "images/point512.png"
+        }
+    },
+
+    "icons": {
+        "16": "images/point16.png",
+        "32": "images/point32.png",
+        "64": "images/point64.png",
+        "128": "images/point128.png",
+        "256": "images/point256.png",
+        "512": "images/point512.png"
     }
 }
