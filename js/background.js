@@ -14,4 +14,5 @@ chrome.runtime.onInstalled.addListener(function(details)
     {
         chrome.declarativeContent.onPageChanged.addRules([ruleOnTFF]);
     });
+
 });

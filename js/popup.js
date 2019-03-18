@@ -9,7 +9,8 @@ document.addEventListener('DOMContentLoaded', function() {
         function(tabs)
         {
             var tabID = tabs[0].id;
-            chrome.extension.getBackgroundPage().console.log(tabs[0]);
+            window.close();
+            chrome.extension.getBackgroundPage().console.log("still run tho");
             chrome.tabs.sendMessage(tabID, {text: 'run'}, chrome.extension.getBackgroundPage().console.log);
         });
     });
