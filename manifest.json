@@ -46,7 +46,7 @@
             "lib/jquery.js",
             "lib/tesseract.min.js",
             "lib/worker.js",
-            "js/content.js"
+            "js/content/tenfastfingers.js"
         ]
       }]
 }
