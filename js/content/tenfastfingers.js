@@ -55,7 +55,7 @@ const cheat_anticheat = function()
                     .recognize(image)
                     .then(function(result){
                         var text = result.text;
-                        console.log(text);
+                        // console.log(text);
                         inputfield.val(text);
                         submitbutton.click();
                     });
