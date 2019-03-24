@@ -27,7 +27,7 @@ const cheat_typetest = function()
         {
             if (event.key == " ")
             {
-                var selectedWord = $('span[wordnr][class="highlight"]').text();
+                var selectedWord = $('span[wordnr].highlight, span[wordnr].highlight-wrong').text();
                 inputfield.val(selectedWord);
                 inputfield.focus();
             }
@@ -37,7 +37,7 @@ const cheat_typetest = function()
 
 const cheat_multiplayer = function()
 {
-    
+
 }
 
 const cheat_anticheat = function()
@@ -54,7 +54,7 @@ const cheat_anticheat = function()
             Tesseract
                     .recognize(image)
                     .then(function(result){
-                        var text = (string)(result.text);
+                        var text = result.text;
                         console.log(text);
                         inputfield.val(text);
                         submitbutton.click();
